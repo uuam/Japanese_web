@@ -1,0 +1,256 @@
+html{
+    scroll-behavior: smooth;
+}
+.box{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-box {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-box{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+  }
+.col-100{
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+[class^=col-] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* 手機橫向 */
+@media(min-width:576px){
+    .box{
+        width: 540px;
+    }
+    .text-box{
+        width: 500px ;
+    }
+    .news-text{
+        flex-wrap: nowrap !important;
+    }
+    .news .news-text p{
+        font-size: 0.9rem;
+    }
+    #viewpoint .vp-text p{
+        font-size: 0.9rem;
+    }
+    #food .food-intr p{
+        font-size: 0.9rem;
+      }
+}
+/* 平板直式 */
+@media(min-width:768px){
+    .box{
+        width: 720px;
+    }
+    .text-box{
+        width: 660px ;
+        /* height: 120%; */
+    }
+    
+}
+/* 平板橫向、小電腦螢幕 */
+@media(min-width:992px){
+    .box{
+        width: 960px;
+    }
+    .text-box{
+        width: 800px ;
+    }
+    .col-l-33{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        width: 33.33%;
+    }
+    .col-l-50{
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 50%;
+    }
+}
+/* 一般電腦螢幕 */
+@media(min-width:1200px){
+    .box{
+        width: 1140px;
+    }
+    .news .news-text p{
+        font-size: 1rem;
+    }
+    #viewpoint .vp-text p{
+        font-size: 1rem;
+    }
+    #food .food-intr p{
+        font-size: 1rem;
+      }
+}
+/* 大電腦螢幕 */
+@media(min-width:1400px){
+    .box{
+        width: 1320px;
+    }
+    .news-box{
+        width: 900px;
+    }
+}
+
+@media (max-width:575px){
+    .news-text{
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        writing-mode: horizontal-tb;
+        height: 600px;
+    }
+    .menu-list{
+        writing-mode: horizontal-tb;
+        align-items: center;
+    }
+    .col-s-100{
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .text-box{
+        width: 80%;
+    }
+    .theme-text{
+        font-size: 2rem !important;
+        bottom: 30% !important;
+        writing-mode: vertical-rl;
+        display: flex;
+        align-items: center;
+    }
+   
+    .news-text p,.vp-text p,.food-intr p{
+        font-size: 0.8rem;
+      }
+    #viewpoint .vp-text{
+        padding-right: 1rem;
+    }
+    #viewpoint .vp-text p,#viewpoint .vp-text a{
+        font-size: 0.8rem;
+    }
+    #viewpoint .vp-text p:nth-child(2){
+        padding-right: 0rem;
+        padding-top: 3rem;
+    }
+
+    #viewpoint .vp-text p{
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+    #viewpoint .brackets {
+        margin-top: 0px;
+        margin-left: -8px;
+      }
+    #viewpoint .learn-more{
+        margin-right: 0;
+        margin-top: 3rem;
+    }
+    #food .food-img-box{
+        width: 70%;
+    }
+    .food-intr .food-intr-text p{
+        font-size: 0.8rem;
+    }
+    footer div:nth-child(1){
+        padding: 1rem 0;
+    }
+}
+@media(min-width:576px) and (max-width:991px){
+    #food .food-img-box{
+        width: 60%;
+    }
+    
+}
+@media(max-width:767px){
+    .vp-text {
+        writing-mode: horizontal-tb;
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+    #viewpoint .learn-more span{
+        width: 40px ;
+        height: 1px ;
+        margin-bottom: 0.3rem ;
+        margin-right: 0.5rem ;
+    }
+    #viewpoint .learn-more{
+        margin-top: 1rem;
+    }
+    #contact .form-box{
+        width: 70% !important;
+    }
+    #contact h5{
+        font-size: 1.5rem;
+    }
+    #food .food-title h4{
+        font-size: 1.7rem;
+    }
+    #food .food-title p{
+        font-size: .9rem;
+    }
+    #food .food-intr .food-title p{
+        padding-right: 1rem;
+    }
+    body .roll-bg {
+        background-attachment:local;
+    }
+}
+@media(max-width:991px){
+    p{
+        white-space: nowrap;
+    }
+    .food-box{
+        width: 70%;
+    }
+    #food .food-intr{
+        margin-top: 6rem;
+    }
+    .food-intr .food-img{
+    text-align: center;
+    }
+    .food-intr .food-title{
+        top: -10%;
+        left: 90%;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+      }
+      .food-intr .food-title p{
+        text-align: end;
+        color: white;
+        padding-right: 0px;
+      }
+      .learn-more{
+        text-align: start;
+      }
+      
+      #food .learn-more a{
+        font-size: 0.8rem;
+      }
+      .food-intr-text{
+        margin-top: 4rem;
+      }
+      #contact .form-box{
+        width: 60%;
+      }
+      
+}
