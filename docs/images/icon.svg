@@ -8,7 +8,7 @@
 	.st2{clip-path:url(#SVGID_2_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
 	.st3{clip-path:url(#SVGID_2_);fill:none;stroke:#F0CA36;stroke-width:12;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
-<rect y="50" class="st0" width="500" height="385"/>
+<circle cx="250" cy="250" r="250" class="st0" />
 <g>
 	<defs>
 		<rect id="SVGID_1_" width="500" height="500"/>
